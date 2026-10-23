@@ -76,7 +76,7 @@ class TextEjemplosPantalla extends StatelessWidget {
             child: SizedBox(
               width: 220,
               child: TextoResumen(
-                texto: 'Un recorrido largo que permite comparar las líneas visibles.',
+                texto: 'Un recorrido largo que permite comparar las líneas visibles \n esto es otra linea.',
                 lineas: 1,
                 centrado: true,
               ),

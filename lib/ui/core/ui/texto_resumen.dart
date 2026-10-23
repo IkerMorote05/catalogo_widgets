@@ -13,7 +13,12 @@ class TextoResumen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final centro = centrado ? TextAlign.left : TextAlign.center;
-    return Text(texto, maxLines: lineas, textAlign: centro);
+    final centro = centrado ? TextAlign.center : TextAlign.left;
+    return Text(
+      texto,
+      maxLines: lineas,
+      textAlign: centro,
+      overflow: TextOverflow.ellipsis,
+    );
   }
 }
