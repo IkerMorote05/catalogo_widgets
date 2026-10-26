@@ -16,7 +16,7 @@ class TextoResumen extends StatelessWidget {
     final centro = centrado ? TextAlign.center : TextAlign.left;
     return Text(
       texto,
-      maxLines: lineas,
+      maxLines: lineas > 0 ? lineas : 1,
       textAlign: centro,
       overflow: TextOverflow.ellipsis,
     );

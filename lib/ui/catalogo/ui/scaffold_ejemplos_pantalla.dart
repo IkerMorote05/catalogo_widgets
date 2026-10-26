@@ -10,7 +10,21 @@ class ScaffoldEjemplosPantalla extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          // Aquí añadiremos los ejemplos del tutorial.
+          Scaffold(
+            appBar: AppBar(
+              title: const Text('Acciones de la sección'),
+              actions: [
+                IconButton(
+                  tooltip: 'Información',
+                  icon: const Icon(Icons.info_outline),
+                  onPressed: () {
+                    debugPrint('Información');
+                  },
+                ),
+              ],
+            ),
+            body: const Text('Prueba la acción de información'),
+          ),
         ],
       ),
     );
