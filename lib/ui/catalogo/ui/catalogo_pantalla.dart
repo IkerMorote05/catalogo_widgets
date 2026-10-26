@@ -14,7 +14,13 @@ class CatalogoPantalla extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Catálogo de widgets')),
+      appBar: AppBar(
+        title: const Text(
+          'Catálogo de widgets · Inicio ',
+          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+        ),
+        backgroundColor: Colors.indigo,
+      ),
       body: ListView(
         children: [
           ListTile(
@@ -92,7 +98,7 @@ class CatalogoPantalla extends StatelessWidget {
           ListTile(
             leading: const Icon(Icons.web_asset),
             title: const Text('Contendores'),
-            trailing: const Icon(Icons.chevron_right),
+            trailing: const Icon(Icons.add_box),
             onTap: () {
               Navigator.of(context).push(
                 MaterialPageRoute<void>(

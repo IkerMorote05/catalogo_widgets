@@ -8,7 +8,13 @@ class ImageEjemplosPantalla extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Ejemplos de Image')),
+      appBar: AppBar(
+        title: const Text(
+          'Catalogo Widget · Image',
+          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+        ),
+        backgroundColor: Colors.indigo,
+      ),
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
