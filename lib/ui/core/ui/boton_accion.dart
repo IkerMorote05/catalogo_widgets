@@ -6,6 +6,7 @@ class BotonAccion extends StatelessWidget {
   final bool destacado;
 
   const BotonAccion({
+    super.key,
     required this.texto,
     this.onPressed = null,
     this.destacado = false,

@@ -4,7 +4,7 @@ class IconoFavorito extends StatelessWidget {
   final bool marcado;
   final double tamano;
 
-  const IconoFavorito({this.marcado = false, this.tamano = 32});
+  const IconoFavorito({super.key, this.marcado = false, this.tamano = 32});
 
   @override
   Widget build(BuildContext context) {

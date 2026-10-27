@@ -6,6 +6,7 @@ class TextoResumen extends StatelessWidget {
   final bool centrado;
 
   const TextoResumen({
+    super.key,
     required this.texto,
     this.lineas = 2,
     this.centrado = false,

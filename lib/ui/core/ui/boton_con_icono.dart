@@ -7,6 +7,7 @@ class BotonConIcono extends StatelessWidget {
   final bool secundario;
 
   const BotonConIcono({
+    super.key,
     required this.texto,
     required this.icono,
     this.onPressed,

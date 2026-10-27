@@ -6,7 +6,7 @@ class IconoEstado extends StatelessWidget {
   final EstadoRuta estado;
   final double tamano;
 
-  const IconoEstado({required this.estado, this.tamano = 32});
+  const IconoEstado({super.key, required this.estado, this.tamano = 32});
 
   Icon iconofinal() {
     final iconos = switch (estado) {

@@ -7,6 +7,7 @@ class ImagenRemota extends StatelessWidget {
   final String? descripcion;
 
   const ImagenRemota({
+    super.key,
     required this.url,
     this.ajuste = BoxFit.cover,
     this.decorativa = false,

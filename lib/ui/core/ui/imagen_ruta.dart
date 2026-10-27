@@ -6,6 +6,7 @@ class ImagenRuta extends StatelessWidget {
   final String descripcion;
 
   const ImagenRuta({
+    super.key,
     required this.rutaAsset,
     this.panoramica = false,
     this.descripcion = 'Sin descripcion',
