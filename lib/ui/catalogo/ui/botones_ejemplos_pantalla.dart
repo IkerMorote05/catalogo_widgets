@@ -8,7 +8,13 @@ class BotonesEjemplosPantalla extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Ejemplos de Botones')),
+      appBar: AppBar(
+        title: const Text(
+          'Catálogo de widgets · Botones ',
+          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+        ),
+        backgroundColor: Colors.indigo,
+      ),
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
