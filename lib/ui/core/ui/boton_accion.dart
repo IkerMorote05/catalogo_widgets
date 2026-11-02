@@ -8,7 +8,7 @@ class BotonAccion extends StatelessWidget {
   const BotonAccion({
     super.key,
     required this.texto,
-    this.onPressed = null,
+    this.onPressed,
     this.destacado = false,
   });
 
@@ -16,22 +16,22 @@ class BotonAccion extends StatelessWidget {
     if (destacado == true) {
       return FilledButton(
         onPressed: onPressed,
-        child: Text(texto),
         style: FilledButton.styleFrom(
           backgroundColor: Colors.indigo,
           foregroundColor: Colors.black,
           padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
         ),
+        child: Text(texto),
       );
     } else {
       return FilledButton(
         onPressed: onPressed,
-        child: Text(texto),
         style: FilledButton.styleFrom(
           backgroundColor: Colors.lightBlue,
           foregroundColor: Colors.white,
           padding: const EdgeInsets.symmetric(horizontal: 28, vertical: 20),
         ),
+        child: Text(texto),
       );
     }
   }
