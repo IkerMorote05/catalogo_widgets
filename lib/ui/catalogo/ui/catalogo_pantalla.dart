@@ -10,6 +10,7 @@ import '../../../data/services/articulos_local_service.dart';
 import '../../prestamos/ui/ejemplo_datos_pantalla.dart';
 import 'placeholder_ejemplos_pantalla.dart';
 import 'scaffold_ejemplos_pantalla.dart';
+import '../../inscripcion/ui/inscripcion_ejemplo_pantalla.dart';
 
 class CatalogoPantalla extends StatelessWidget {
   const CatalogoPantalla({super.key});
@@ -125,6 +126,15 @@ class CatalogoPantalla extends StatelessWidget {
                 ),
               );
             },
+          ),
+          ListTile(
+            leading: const Icon(Icons.login),
+            title: const Text('Login de demostración'),
+            onTap: () => Navigator.of(context).push<void>(
+              MaterialPageRoute<void>(
+                builder: (_) => const InscripcionEjemploPantalla(),
+              ),
+            ),
           ),
         ],
       ),
